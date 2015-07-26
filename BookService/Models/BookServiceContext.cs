@@ -20,8 +20,8 @@ namespace BookService.Models
             Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
-        public System.Data.Entity.DbSet<BookService.Models.Author> Authors { get; set; }
+        public System.Data.Entity.DbSet<BookService.Models.Entities.Author> Authors { get; set; }
 
-        public System.Data.Entity.DbSet<BookService.Models.Book> Books { get; set; }
+        public System.Data.Entity.DbSet<BookService.Models.Entities.Book> Books { get; set; }
     }
 }
