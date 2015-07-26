@@ -23,6 +23,10 @@ namespace BookService
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Scripts/knockout-3.3.0.js",
+                "~/Scripts/app.js"));
         }
     }
 }
